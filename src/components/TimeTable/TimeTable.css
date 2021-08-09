@@ -1,0 +1,161 @@
+
+@keyframes blink {
+    0%{
+        border-left: 0.8vw solid transparent;
+    }
+    50%{
+        border-left: 0.8vw solid #4CAF50;
+    }
+    100%{
+        border-left: 0.8vw solid transparent;
+    }
+}
+
+@keyframes blink2 {
+    0%{
+        border: 3px solid transparent;
+    }
+    50%{
+        border: 3px solid #4CAF50;
+    }
+    100%{
+        border: 3px solid transparent;
+    }
+}
+
+@keyframes blink3 {
+    0%{
+        opacity: 0.7;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.7;
+    }
+}
+
+
+.toggle{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes rotateImg_on {
+    0%{}
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes table_appear {
+    0%{
+        opacity: 0;
+        transform:rotateX(-90deg)
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg)
+    }
+}
+
+
+.img_on{
+    margin-left: 1vw;
+    width: 3vw;
+    color: #1877f2;
+}
+.Table{
+    display: block;
+    overflow-y: auto;
+    font-size: max(6px,1.5vw);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    table-layout: fixed;
+    animation: table_appear 0.5s ease 1 forwards;
+}
+
+
+.Table th{
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border: 3px solid transparent;
+}
+
+
+.Header{
+    background:#1877f2;
+    color: azure;
+}
+thead{
+    position: sticky;
+  top: 0;
+}
+
+.today_on{
+    color : #1877f2;
+    animation: blink 1s linear  infinite  ;
+}
+.today_onClass{
+    color:#4CAF50;
+    animation: blink3 1s linear infinite;
+
+}
+
+.day{
+    color : #1877f2;
+}
+
+@media all and (max-width:480px) {
+
+.Table{
+    font-size: 5vw;
+    overflow-y: auto;
+}
+
+    .Table th {
+        
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    }
+    
+    
+
+    .today_on , .day{
+        background-color: white;
+        position: sticky;
+        left: 0;
+    }
+    .today_on{
+        z-index: 3;
+    }
+    
+    thead{
+        position: sticky;
+        top: 0;
+    }
+    .today_onClass{
+        color:#4CAF50;
+        animation: blink3 1s linear infinite;
+    }
+    .day_media{
+        background-color:#1877f2;
+        color: white;
+        position: sticky;
+        left: 0;
+        top:0;
+    }   
+    .toggle{
+        font-size: 3vw;
+    } 
+    .img_on{
+        width: 6vw;
+    }
+}
