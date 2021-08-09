@@ -21,6 +21,8 @@ border: whitesmoke 1px solid;
 margin-left: 3%;
 box-shadow: 10px 10px 10px rgba(7, 5, 128, 0.281);
 padding-bottom: 15px;
+margin-top: 15px;
+
 }
 
 .input{
@@ -37,6 +39,8 @@ margin-right: 3%;
 border:whitesmoke 1px solid;
 width: 45%;
 float: right;
+margin-top: 15px;
+
 }
 .leftform{
     display: inline-flex;

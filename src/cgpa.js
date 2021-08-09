@@ -115,15 +115,29 @@ function Cgpa() {
           </div>    
         
       )})
-    
+    const refresh =()=>{
+        setCG(0);
+        setCalculated(false);
+        setCred(0);
+        setCredSum(0);
+        setFlag(false);
+        setList([]);
+        setMark(0);
+        setNewCG(0);
+        setPrevCred(0);
+        setSG(0);
+        subjects.map((item,i)=>{document.getElementById(i).disabled = false;})
+        
+    }
     return (
         
         <div className="form">
             <h1>CGPA Calculator</h1>
-            
+            <button type="button" className ="btn" onClick={refresh}>Refresh</button>
             <div className="left">
             
             <h4>Enter grades to calculate current sem SGPA</h4>
+
             <form action="">
                     {subjectList}
                     <button type = "button" className ="btn" onClick={calcSG}>Calculate SG</button>
