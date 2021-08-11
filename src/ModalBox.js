@@ -29,25 +29,26 @@ const changeContent = (e) => {
          </div>
          <div className="p-2">
           {contentType === 0?
-            
+
               props.modalContent.books.map((book) => {
                 return <p key={book}>{book}</p>
               })
 
           :
-          
+
             (contentType === 1?
-              
+
               props.modalContent.notes.map((note) => {
-                return <p key={note}>{note}</p>
+                return <iframe src="https://www.wikipedia.com"></iframe>
+
               })
-              
-              : 
-              
+
+              :
+
               props.modalContent.yt.map((yt_link) => {
                 return <p key={yt_link}>{yt_link}</p>
               })
-              
+
               )
 
           }

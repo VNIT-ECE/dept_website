@@ -24,7 +24,9 @@ const Row = () =>{
     setInterval(setter,1)
 return(
     <div>
-        {/* <Title></Title> */}
+        <div className="flex justify-center">
+          <button className="mx-auto text-center text-4xl rounded bg-teal-accent-400 shadow-xl my-10 px-6 py-3 text-white">Time Table</button>
+        </div>
         <RowComp  row_type="Ongoing Class" class_name={onClass} time_of_class={onTime} join_link={onLink} button_status={(onClass == "No Ongoing Class") ? 0 : 1}></RowComp>
         <RowComp row_type="Upcoming Class" class_name={upClass} time_of_class={upTime} join_link={upLink} button_status={(upClass == "No Upcoming Class") ? 0 : 1} ></RowComp>
     </div>

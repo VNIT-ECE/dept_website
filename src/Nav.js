@@ -21,40 +21,40 @@ export default function Nav() {
         <ul class="flex items-center hidden space-x-8 lg:flex">
           <li>
             <a
-              href="/"
-              aria-label="Our product"
-              title="Our product"
-              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              href="#timetable"
+              aria-label="Time Table"
+              title="Time Table"
+              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
             >
               Time Table
             </a>
           </li>
           <li>
             <a
-              href="/"
-              aria-label="Our product"
-              title="Our product"
-              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              href="#resources"
+              aria-label="Resources"
+              title="Resources"
+              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
             >
               Resources
             </a>
           </li>
           <li>
             <a
-              href="/"
-              aria-label="Product pricing"
-              title="Product pricing"
-              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              href="#cgpa_calc"
+              aria-label="CGPA Calculator"
+              title="CGPA Calculator"
+              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
             >
               CGPA Calculator
             </a>
           </li>
           <li>
             <a
-              href="/"
-              aria-label="Product pricing"
-              title="Product pricing"
-              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              href="/#blog"
+              aria-label="Blog"
+              title="Blog"
+              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
             >
               Blog
             </a>
@@ -62,9 +62,9 @@ export default function Nav() {
           <li>
             <a
               href="/"
-              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-              aria-label="Sign up"
-              title="Sign up"
+              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none"
+              aria-label="Sem 5"
+              title="Sem 5"
             >
               Sem 5
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex items-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -77,7 +77,7 @@ export default function Nav() {
           <button
             aria-label="Open Menu"
             title="Open Menu"
-            class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
+            class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-teal-50 focus:bg-teal-50"
             onClick={() => setIsMenuOpen(true)}
           >
             <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
@@ -97,7 +97,7 @@ export default function Nav() {
           </button>
           {isMenuOpen && (
             <div class="absolute top-0 left-0 w-full">
-              <div class="p-5 bg-white border rounded shadow-sm">
+              <div class="p-5 bg-white border rounded shadow-sm z-10">
                 <div class="flex items-center justify-between mb-4">
                   <div>
                     <a
@@ -106,23 +106,11 @@ export default function Nav() {
                       title="Company"
                       class="inline-flex items-center"
                     >
-                      <svg
-                        class="w-8 text-deep-purple-accent-400"
-                        viewBox="0 0 24 24"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeMiterlimit="10"
-                        stroke="currentColor"
-                        fill="none"
-                      >
-                        <rect x="3" y="1" width="7" height="12" />
-                        <rect x="3" y="17" width="7" height="6" />
-                        <rect x="14" y="1" width="7" height="6" />
-                        <rect x="14" y="11" width="7" height="12" />
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                    </svg>
                       <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                        Company
+                        ECE
                       </span>
                     </a>
                   </div>
@@ -147,51 +135,51 @@ export default function Nav() {
                     <li>
                       <a
                         href="/"
-                        aria-label="Our product"
-                        title="Our product"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        aria-label="Time Table"
+                        title="Time Table"
+                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
                       >
-                        Product
+                        Time Table
                       </a>
                     </li>
                     <li>
                       <a
                         href="/"
-                        aria-label="Our product"
-                        title="Our product"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        aria-label="Resources"
+                        title="Resources"
+                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
                       >
-                        Features
+                        Resources
                       </a>
                     </li>
                     <li>
                       <a
                         href="/"
-                        aria-label="Product pricing"
-                        title="Product pricing"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        aria-label="CGPA Calculator"
+                        title="CGPA Calculator"
+                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
                       >
-                        Pricing
+                        CGPA Calculator
                       </a>
                     </li>
                     <li>
                       <a
                         href="/"
-                        aria-label="About us"
-                        title="About us"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        aria-label="Blog"
+                        title="Blog"
+                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
                       >
-                        About us
+                        Blog
                       </a>
                     </li>
                     <li>
                       <a
                         href="/"
-                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                        aria-label="Sign up"
-                        title="Sign up"
+                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none"
+                        aria-label="Sem 5"
+                        title="Sem 5"
                       >
-                        Sign up
+                        Sem 5
                       </a>
                     </li>
                   </ul>

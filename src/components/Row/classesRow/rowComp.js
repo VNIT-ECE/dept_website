@@ -9,7 +9,7 @@ const RowComp = ({row_type,class_name,time_of_class,join_link,button_status}) =>
       if(matches){
             return (
               <div className="Row__Container_media">
-               
+
                 <div className = "Row__Title_m">
                   <p className = "Row__TitleText">{row_type}</p>
                 </div>
@@ -53,6 +53,5 @@ const RowComp = ({row_type,class_name,time_of_class,join_link,button_status}) =>
 
 }
 
-  
+
 export default RowComp;
-  

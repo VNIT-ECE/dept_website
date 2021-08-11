@@ -3,11 +3,11 @@ import Resources from "./Resources";
 import Hero from "./Hero";
 import Nav from "./Nav";
 import Footer from "./Footer";
-
 import Row from "./components/Row/Row";
 import TimeTable from "./components/TimeTable/TimeTable";
 import './App.css';
 import CGPA from "./cgpa";
+import Blog from "./Blog";
 
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -19,11 +19,12 @@ function App() {
         <Nav />
         <Hero />
         <div className="App__Container">
-            <Row></Row>
-            <TimeTable></TimeTable>
+            <Row />
+            <TimeTable />
         </div>
         <Resources />
         <CGPA />
+        <Blog />
         <Footer />
       </div>
   );

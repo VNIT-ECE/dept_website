@@ -4,8 +4,8 @@ const SubjectCard = (props)=>{
 
 
   return(
-    <div className="m-5">
-      <div className="h-60 w-60 rounded shadow-xl flex items-center cursor-pointer" onClick={() => props.call(props.data)}>
+    <div className="m-5 z-10">
+      <div className="h-60 w-60 rounded shadow-xl flex items-center cursor-pointer bg-white" onClick={() => props.call(props.data)}>
         <p className="font-bold text-teal-accent-400 text-5xl mx-auto">{props.data.subName}</p>
       </div>
 
