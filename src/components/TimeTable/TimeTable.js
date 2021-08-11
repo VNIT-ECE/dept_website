@@ -26,9 +26,9 @@ const TimeTable = () =>{
     return(
         <div className="table_div">
             <div className="flex justify-center">
-                <button type="button" className="px-6 py-3 my-5 shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 text-white" onClick={() => setShow(!show)}>Full TimeTable</button>
+                <button type="button" className="px-6 py-3 my-5 shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 text-white" onClick={() => setShow(!show)}>{!show?("Full TimeTable"): ("Close TimeTable")}</button>
             </div>
-        {show?(<table className="Table">
+        {show?(<div className="flex justify-center"><table className="Table">
         <thead>
             <tr className="Header">
                 <th className="day_media">Day/Time</th>
@@ -81,7 +81,7 @@ const TimeTable = () =>{
                 ))}
             </tr>
             </tbody>
-        </table>): null}
+        </table></div>): null}
         </div>
     )
 

@@ -13,7 +13,7 @@ const changeContent = (e) => {
 
 
   return(
-    <div className="h-auto w-1/2 fixed right-0 left-0 top-10 mx-auto shadow-2xl bg-white">
+    <div className="h-auto w-1/2 fixed right-0 left-0 top-10 mx-auto shadow-2xl bg-white z-10">
        <div className="p-4">
          <div className="flex justify-between">
            <div>
