@@ -5,7 +5,7 @@ export default function Blog(){
                 <button className="mx-auto text-center text-4xl rounded bg-teal-accent-400 shadow-xl my-10 px-6 py-3 text-white">Blog</button>
             </div>
             <div className="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
-                <div className="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
+                <div className="px-10 bg-white py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
                     <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
                         20 Nov 2020
                     </p>
@@ -29,7 +29,7 @@ export default function Blog(){
                         Read more
                     </a>
                 </div>
-                <div className="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
+                <div className="px-10 py-20 bg-white text-center border rounded lg:px-5 lg:py-10 xl:py-20">
                     <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
                         20 Nov 2020
                     </p>
@@ -53,7 +53,7 @@ export default function Blog(){
                         Read more
                     </a>
                 </div>
-                <div className="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
+                <div className="px-10 py-20  text-center border rounded lg:px-5 lg:py-10 xl:py-20">
                     <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
                         20 Nov 2020
                     </p>
