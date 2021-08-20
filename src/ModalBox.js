@@ -13,13 +13,13 @@ const changeContent = (e) => {
 
 
   return(
-    <div className="h-auto w-1/2 fixed right-0 left-0 top-10 mx-auto shadow-2xl bg-white z-10">
+    <div className="h-auto sm:w-1/2 w-4/2  fixed right-0 left-0 top-10 mx-auto shadow-2xl bg-white z-10">
        <div className="p-4">
          <div className="flex justify-between">
            <div>
-              <button className={"p-2 m-2 shadow " + (contentType === 0 ? "bg-blue-500 text-white" : "bg-white")} onClick={()=>changeContent(0)}>Books</button>
-              <button className={"p-2 m-2 shadow " + (contentType === 1 ? "bg-blue-500 text-white" : "bg-white")} onClick={() =>changeContent(1)}>Notes</button>
-              <button className={"p-2 m-2 shadow " + (contentType === 2 ? "bg-blue-500 text-white" : "bg-white")} onClick={() =>changeContent(2)}>YT Channel</button>
+              <button className={"p-2 m-2 shadow " + (contentType === 0 ? "bg-teal-accent-400 text-white" : "bg-white")} onClick={()=>changeContent(0)}>Books</button>
+              <button className={"p-2 m-2 shadow " + (contentType === 1 ? "bg-teal-accent-400 text-white" : "bg-white")} onClick={() =>changeContent(1)}>Notes</button>
+              <button className={"p-2 m-2 shadow " + (contentType === 2 ? "bg-teal-accent-400 text-white" : "bg-white")} onClick={() =>changeContent(2)}>YT Channel</button>
            </div>
            <div className="p-2 m-2 cursor-pointer" onClick={()=>props.call(null)}>
              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -31,7 +31,7 @@ const changeContent = (e) => {
           {contentType === 0?
 
               props.modalContent.books.map((book) => {
-                return <p key={book}>{book}</p>
+                return <iframe key={book} className="w-full" title={book} src={book}></iframe>
               })
 
           :
@@ -39,14 +39,14 @@ const changeContent = (e) => {
             (contentType === 1?
 
               props.modalContent.notes.map((note) => {
-                return <iframe src="https://www.wikipedia.com"></iframe>
+                return <iframe key={note} className="w-full" title={note} src={note}></iframe>
 
               })
 
               :
 
               props.modalContent.yt.map((yt_link) => {
-                return <p key={yt_link}>{yt_link}</p>
+                return <iframe key={yt_link} className="w-full" title={yt_link} src={yt_link}></iframe>
               })
 
               )

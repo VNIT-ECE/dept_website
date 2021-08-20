@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 export default function Footer() {
   return (
     <div className="px-4 pt-16 pb-4 mt-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-gray-100">
@@ -29,28 +30,32 @@ export default function Footer() {
             </p>
             <ul className="mt-2 space-y-2">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="timetable"
+                  spy={true} smooth={true}
                   className="text-gray-600 transition-colors duration-300 hover:text-teal-accent-400"
                 >
                   Timetable
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  to="resources"
+                  spy={true} smooth={true}
                   href="/"
                   className="text-gray-600 transition-colors duration-300 hover:text-teal-accent-400"
                 >
                   Resources
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="cgpa_calc"
+                  spy={true} smooth={true}
                   className="text-gray-600 transition-colors duration-300 hover:text-teal-accent-400"
                 >
                   CGPA Calculator
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -91,6 +96,14 @@ export default function Footer() {
                   ECE Coursebook
                 </a>
               </li>
+              <li>
+                <a
+                  href="http://vnit.ac.in/ece/wp-content/uploads/2019/10/B_TECH_ECE_Course_Book.pdf"
+                  className="text-gray-600 transition-colors duration-300 hover:text-teal-accent-400"
+                >
+                  Academic Calender
+                </a>
+              </li>
             </ul>
           </div>
           <div>
@@ -98,7 +111,8 @@ export default function Footer() {
             <ul className="mt-2 space-y-2">
               <li>
                 <a
-                  href="https://bit.ly/3xDS6An"
+                  href="/images/ece_council.jpg"
+                  
                   className="text-gray-600 transition-colors duration-300 hover:text-teal-accent-400"
                 >
                   Department Council
@@ -106,7 +120,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://bit.ly/3yFVcoy"
+                  href="/images/ece_mentors.jpg"
                   className="text-gray-600 transition-colors duration-300 hover:text-teal-accent-400"
                 >
                   Student Mentors

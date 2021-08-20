@@ -1,15 +1,18 @@
 import React, {useState} from "react";
+import { Link } from "react-scroll";
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-0 lg:px-0">
+    
+    <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-0 lg:px-0 sticky top-0 z-40 backdrop-filter backdrop-blur-sm bg-white bg-opacity-40">
       <div class="relative flex items-center justify-between">
-        <a
-          href="/"
-          aria-label="Company"
-          title="Company"
-          class="inline-flex items-center"
+        <Link
+          to="/"
+          spy={true} smooth={true}
+          aria-label="ECE"
+          title="ECE"
+          class="cursor-pointer inline-flex items-center"
         >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
@@ -17,52 +20,57 @@ export default function Nav() {
           <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
             ECE
           </span>
-        </a>
+        </Link>
         <ul class="flex items-center hidden space-x-8 lg:flex">
           <li>
-            <a
-              href="#timetable"
+            <Link
+              to="timetable"
+               smooth={true}
               aria-label="Time Table"
               title="Time Table"
-              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+              class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
             >
               Time Table
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#resources"
+            <Link
+              to="resources"
+               smooth={true}
               aria-label="Resources"
               title="Resources"
-              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+              class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
             >
               Resources
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#cgpa_calc"
+            <Link
+              to="cgpa_calc"
+               smooth={true}
               aria-label="CGPA Calculator"
               title="CGPA Calculator"
-              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+              class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
             >
               CGPA Calculator
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/#blog"
+            <Link
+              to="blog"
+               smooth={true}
               aria-label="Blog"
               title="Blog"
-              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+              class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
             >
               Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/"
-              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none"
+            <Link
+              to="/"
+               smooth={true}
+              class="cursor-pointer inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none"
               aria-label="Sem 5"
               title="Sem 5"
             >
@@ -70,7 +78,7 @@ export default function Nav() {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex items-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
-            </a>
+            </Link>
           </li>
         </ul>
         <div class="lg:hidden">
@@ -100,11 +108,12 @@ export default function Nav() {
               <div class="p-5 bg-white border rounded shadow-sm z-10">
                 <div class="flex items-center justify-between mb-4">
                   <div>
-                    <a
-                      href="/"
-                      aria-label="Company"
-                      title="Company"
-                      class="inline-flex items-center"
+                    <Link
+                      to="/"
+                      spy={true} smooth={true}
+                      aria-label="ECE"
+                      title="ECE"
+                      class="cursor-pointer inline-flex items-center"
                     >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
@@ -112,7 +121,7 @@ export default function Nav() {
                       <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                         ECE
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div>
                     <button
@@ -133,54 +142,59 @@ export default function Nav() {
                 <nav>
                   <ul class="space-y-4">
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to="timetable"
+                        spy={true} smooth={true}
                         aria-label="Time Table"
                         title="Time Table"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+                        class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
                       >
                         Time Table
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to="resources"
+                        spy={true} smooth={true}
                         aria-label="Resources"
                         title="Resources"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+                        class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
                       >
                         Resources
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to="cgpa_calc"
+                        spy={true} smooth={true}
                         aria-label="CGPA Calculator"
                         title="CGPA Calculator"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+                        class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
                       >
                         CGPA Calculator
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/"
-                        aria-label="Blog"
-                        title="Blog"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+                      <Link
+                        to="blog"
+                        spy={true} smooth={true}
+                        aria-label="Quick Links"
+                        title="Quick Links"
+                        class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
                       >
-                        Blog
-                      </a>
+                        Quick Links
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/"
-                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none"
+                      <Link
+                        to="/"
+                        spy={true} smooth={true}
+                        class="cursor-pointer inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none"
                         aria-label="Sem 5"
                         title="Sem 5"
                       >
                         Sem 5
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>

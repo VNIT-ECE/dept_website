@@ -128,9 +128,9 @@ function Cgpa() {
 
     }
     return (
-        <div>
+        <section id="cgpa_calc">
         <div className="flex justify-center">
-          <button className="mx-auto text-center text-4xl rounded bg-teal-accent-400 shadow-xl my-10 px-6 py-3 text-white">CGPA Calculator</button>
+          <div className="mx-auto text-center text-4xl rounded bg-teal-accent-400 shadow-xl my-10 px-6 py-3 text-white">CGPA Calculator</div>
         </div>
         <div className="flex flex-col h-auto">
         <div className="flex justify-center">
@@ -203,7 +203,7 @@ function Cgpa() {
 
 </div>
 
-        </div>
+        </section>
     )
 }
 

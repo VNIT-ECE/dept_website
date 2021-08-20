@@ -8,25 +8,37 @@ import TimeTable from "./components/TimeTable/TimeTable";
 import './App.css';
 import CGPA from "./cgpa";
 import Blog from "./Blog";
+import Contact from "./Contact";
+import Gallery from "./Gallery/Gallery";
 
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 
 function App() {
   return (
+    <Router>
       <div className="max-w-7xl mx-auto relative">
         <Nav />
-        <Hero />
-        <div className="App__Container">
-            <Row />
-            <TimeTable />
-        </div>
-        <Resources />
-        <CGPA />
-        <Blog />
+        <Switch>
+          <Route exact path="/">
+            <Hero />
+            <div className="App__Container">
+                <Row />
+                <TimeTable />
+            </div>
+            <Resources />
+            <CGPA />
+            <Blog /> 
+            <Contact />
+          </Route>
+          <Route exact path="/gallery">
+            <Gallery />
+          </Route> 
+        </Switch>
         <Footer />
       </div>
+      </Router>
   );
 }
 
