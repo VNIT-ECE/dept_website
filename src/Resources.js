@@ -17,7 +17,7 @@ const Resources = ()=> {
     <section id="resources">
 
     <div className="flex justify-center">
-      <div className="mx-auto text-center text-4xl rounded bg-teal-accent-400 shadow-xl my-10 px-6 py-3 text-white">Resources</div>
+      <div className="mx-auto text-center text-4xl rounded bg-teal-accent-700 shadow-xl my-10 px-6 py-3 text-white">Resources</div>
     </div>
 
     <div className="flex justify-center flex-wrap relative bg-gray-100">

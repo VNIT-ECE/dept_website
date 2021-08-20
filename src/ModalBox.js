@@ -17,9 +17,9 @@ const changeContent = (e) => {
        <div className="p-4">
          <div className="flex justify-between">
            <div>
-              <button className={"p-2 m-2 shadow " + (contentType === 0 ? "bg-teal-accent-400 text-white" : "bg-white")} onClick={()=>changeContent(0)}>Books</button>
-              <button className={"p-2 m-2 shadow " + (contentType === 1 ? "bg-teal-accent-400 text-white" : "bg-white")} onClick={() =>changeContent(1)}>Notes</button>
-              <button className={"p-2 m-2 shadow " + (contentType === 2 ? "bg-teal-accent-400 text-white" : "bg-white")} onClick={() =>changeContent(2)}>YT Channel</button>
+              <button className={"p-2 m-2 shadow " + (contentType === 0 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={()=>changeContent(0)}>Books</button>
+              <button className={"p-2 m-2 shadow " + (contentType === 1 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={() =>changeContent(1)}>Notes</button>
+              <button className={"p-2 m-2 shadow " + (contentType === 2 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={() =>changeContent(2)}>YT Channel</button>
            </div>
            <div className="p-2 m-2 cursor-pointer" onClick={()=>props.call(null)}>
              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

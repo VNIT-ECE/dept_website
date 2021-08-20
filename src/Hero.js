@@ -2,11 +2,11 @@ import { Link } from "react-scroll";
 export default function Hero (){
   return (
     <div className="mb-16">
-      <div className="bg-gray-100">
+      <div className="bg-gray-50">
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             <div>
-              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+              <p className="inline-block px-3 py-2 mb-4 text-xs font-semibold tracking-wider text-white uppercase rounded-full bg-teal-accent-700">
                 Welcome!
               </p>
             </div>
@@ -36,24 +36,24 @@ export default function Hero (){
                 </svg>
                 <span className="relative z-0">Get</span>
               </span>{' '}
-              everything you need to ace in the department.
+              everything you need to ace in the department
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-              Tired of arranging resourses? We got you covered. Get everything you need this semester under one roof.</p>
+              Tired of arranging resourses? We got you covered. Get everything you need this semester under one roof</p>
           </div>
           <div className="flex items-center sm:justify-center">
-            <Link
+            {/* <Link
               to="timetable"
               spy={true} smooth={true}
               aria-label="Time Table"
-              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none"
+              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-700 hover:bg-teal-500 focus:shadow-outline focus:outline-none"
             >
               Get started
-            </Link>
+            </Link> */}
             <a
               href="/gallery"
               aria-label=""
-              className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-teal-accent-700"
+              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-700 hover:bg-teal-500 focus:shadow-outline focus:outline-none"
             >
               Gallery
             </a>
