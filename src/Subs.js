@@ -15,8 +15,13 @@ const subs = [
         yt:
             [
                 "https://www.youtube.com/embed/kAs8OerKRmc"
+            ],
+        assignment:
+            [
+                "https://docs.google.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
             ]
     },
+    
 
     {
         id: 2,
@@ -31,6 +36,10 @@ const subs = [
             ],
         yt:
             ["https://www.youtube.com/embed/u7u49FE5H-c"
+            ],
+        assignment:
+            [
+                "https://docs.gogle.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
             ]
     },
 
@@ -46,7 +55,11 @@ const subs = [
                 "https://drive.google.com/drive/folders/1YPeROAMiNOp9fJcPwt7Jb4_FWzAgkGzi?usp=sharing"
             ],
         yt:
-            [""]
+            [""],
+        assignment:
+            [
+                "  "
+            ]
     },
 
     {
@@ -60,7 +73,11 @@ const subs = [
             ["https://drive.google.com/drive/u/0/folders/13WRjYAKiyGT6T6EnzUjKlfLAumkwY3y7",
                 "https://drive.google.com/drive/u/0/folders/1WuAOlWd7cxNNZY84X8k3qAPrxjHnLtlO"],
         yt:
-            [""]
+            [""],
+        assignment:
+            [
+                "  "
+            ]
     },
 
     {
@@ -74,7 +91,11 @@ const subs = [
             ["https://drive.google.com/file/d/1ZSqPc1gusNzNOs8Z0bOIg1--Gwf0vy3C/preview",
                 "https://drive.google.com/drive/folders/1-oVia_LrzhQ0EvCD_-xRpsWaElVmKbiq"],
         yt:
-            [""]
+            [""],
+        assignment:
+            [
+                "  "
+            ]
     },
 
     {
@@ -85,7 +106,11 @@ const subs = [
         notes:
             ["https://drive.google.com/drive/folders/1NivL3kNMT_LCuSa23LFo9c-yC1JSvUks?usp=sharing"],
         yt:
-            [""]
+            [""],
+        assignment:
+            [
+                " "
+            ]
     },
 
     {
@@ -96,7 +121,11 @@ const subs = [
         notes:
             ["https://drive.google.com/file/d/1slPxegIOhAq5tFzvx7jsrv6p_rNiN7zL/preview"],
         yt:
-            [""]
+            [""],
+        assignment:
+            [
+                " "
+            ]
     },
 
     {
@@ -107,7 +136,11 @@ const subs = [
         notes:
             [""],
         yt:
-            [""]
+            [""],
+        assignment:
+            [
+                " "
+            ]
     },
 
     {
@@ -118,7 +151,11 @@ const subs = [
         notes:
             ["https://drive.google.com/drive/folders/1NIpddcKKBqyfq-i_P2isLJUxqPlai7q5"],
         yt:
-            [""]
+            [""],
+        assignment:
+            [
+                " "
+            ]
     }
 ];
 

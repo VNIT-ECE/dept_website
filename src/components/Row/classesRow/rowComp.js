@@ -40,7 +40,7 @@ const RowComp = ({row_type,class_name,time_of_class,join_link,button_status}) =>
                   <p>{time_of_class}</p>
                 </div>
                 <div className="Row__JoinButtonDiv">
-                  <a className={(button_status == 0) ? "Row__JoinButton_Off" : "Row__JoinButton"} href={join_link} target="_blank" title={(button_status == 1) ? "This is a general link for " + class_name + " class. Do not depend completely on this link." : null}>{class_name == "CMOS / CAO / ESD" || class_name == "Algorithms" ? "Check Group" : "Join Now"}</a>
+                  <a className={(button_status === 0) ? "Row__JoinButton_Off" : "Row__JoinButton"} href={join_link} target="_blank" rel="noreferrer" title={(button_status === 1) ? "This is a general link for " + class_name + " class. Do not depend completely on this link." : null}>{class_name === "CMOS / CAO / ESD" || class_name === "Algorithms" ? "Check Group" : "Join Now"}</a>
                 </div>
               </div>
           );

@@ -13,13 +13,14 @@ const changeContent = (e) => {
 
 
   return(
-    <div className="h-auto sm:w-1/2 w-4/2  fixed right-0 left-0 top-10 mx-auto shadow-2xl bg-white z-10">
+    <div className="h-auto sm:w-1/2 w-4/2  fixed right-0 left-0 top-10 mx-auto shadow-2xl bg-white z-40">
        <div className="p-4">
          <div className="flex justify-between">
            <div>
               <button className={"p-2 m-2 shadow " + (contentType === 0 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={()=>changeContent(0)}>Books</button>
               <button className={"p-2 m-2 shadow " + (contentType === 1 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={() =>changeContent(1)}>Notes</button>
               <button className={"p-2 m-2 shadow " + (contentType === 2 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={() =>changeContent(2)}>YT Channel</button>
+              <button className={"p-2 m-2 shadow " + (contentType === 3 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={() => changeContent(3)}>Assignment</button>
            </div>
            <div className="p-2 m-2 cursor-pointer" onClick={()=>props.call(null)}>
              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -27,7 +28,7 @@ const changeContent = (e) => {
              </svg>
            </div>
          </div>
-         <div className="p-2">
+         <div className="sm:p-2 p-0">
           {contentType === 0?
 
               props.modalContent.books.map((book) => {
@@ -43,12 +44,18 @@ const changeContent = (e) => {
 
               })
 
-              :
-
+              :(
+                contentType === 2 ?
               props.modalContent.yt.map((yt_link) => {
                 return <iframe key={yt_link} className="w-full" title={yt_link} src={yt_link}></iframe>
+              }):
+              props.modalContent.assignment.map((link) => {
+                return(
+                <div>
+                    <a key={link} className="text-md underline w-full h-96" target="_blank" rel="noreferrer" href={link}>{link}</a>
+                </div>);
               })
-
+              )
               )
 
           }

@@ -14,9 +14,8 @@ function Cgpa() {
         {name:'Wave Guides and Antennas', credits: 3},
         {name: 'CAO/CMOS/ESD/ALGO', credits: 3}
     ]
-    const [cred,setCred] = useState(0);
+    // const [cred,setCred] = useState(0);
     const [calculated,setCalculated] = useState(false);
-    const [mark,setMark] = useState(0);
      const [SG,setSG] = useState(0);
     var [studentlist,setList] = useState([]);
     const [CG,setCG] = useState(0);
@@ -96,11 +95,10 @@ function Cgpa() {
     const refresh =()=>{
         setCG(0);
         setCalculated(false);
-        setCred(0);
+        // setCred(0);
         setCredSum(0);
         setFlag(false);
         setList([]);
-        setMark(0);
         setNewCG(0);
         setPrevCred(0);
         setSG(0);
