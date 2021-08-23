@@ -1,54 +1,54 @@
 const timeTableData = () =>{
     var monday = new Map();
     monday.set(9,"-");
-    monday.set(10,"Embedded Systems");
-    monday.set(11,"Control Engineering");
+    monday.set(10,"ES");
+    monday.set(11,"CE");
     monday.set(12,"CMOS / CAO / ESD");
     monday.set(13,"Break");
-    monday.set(14,"Waveguides & Antenna");
+    monday.set(14,"WA");
     monday.set(15,"-");
 
     var tuesday = new Map();
-    tuesday.set(9,"Algorithms");
-    tuesday.set(10,"Waveguides & Antenna");
-    tuesday.set(11,"Analog Communication");
-    tuesday.set(12,"Measurement & Instrumentation");
+    tuesday.set(9,"Algo");
+    tuesday.set(10,"WA");
+    tuesday.set(11,"AC");
+    tuesday.set(12,"MI");
     tuesday.set(13,"Break");
     tuesday.set(14,"-");
-    tuesday.set(15,"Control Engineering");
+    tuesday.set(15,"CE");
 
     var wednesday = new Map();
     wednesday.set(9,"CMOS / CAO / ESD");
     wednesday.set(10,"-");
-    wednesday.set(11,"Embedded Systems");
-    wednesday.set(12,"Control Engineering");
+    wednesday.set(11,"ES");
+    wednesday.set(12,"CE");
     wednesday.set(13,"Break");
-    wednesday.set(14,"Algorithms");
-    wednesday.set(15,"Analog Communication");
+    wednesday.set(14,"Algo");
+    wednesday.set(15,"AC");
 
     var thursday = new Map();
-    thursday.set(9,"Measurement & Instrumentation");
-    thursday.set(10,"Algorithms");
-    thursday.set(11,"Waveguides & Antenna");
-    thursday.set(12,"Analog Communication");
+    thursday.set(9,"MI");
+    thursday.set(10,"Algo");
+    thursday.set(11,"WA");
+    thursday.set(12,"AC");
     thursday.set(13,"Break");
     thursday.set(14,"CMOS / CAO / ESD");
-    thursday.set(15,"Embedded Systems");
+    thursday.set(15,"ES");
 
     var friday = new Map();
-    friday.set(9,"Control Engineering");
+    friday.set(9,"CE");
     friday.set(10,"CMOS / CAO / ESD");
-    friday.set(11,"Measurement & Instrumentation");
-    friday.set(12,"Embedded Systems");
+    friday.set(11,"MI");
+    friday.set(12,"ES");
     friday.set(13,"Break");
     friday.set(14,"-");
     friday.set(15,"-");
 
     var saturday = new Map();
-    saturday.set(9,"Analog Communications");
-    saturday.set(10,"Measurement & Instrumentation");
-    saturday.set(11,"Algorithms");
-    saturday.set(12,"Waveguides & Antenna");
+    saturday.set(9,"AC");
+    saturday.set(10,"MI");
+    saturday.set(11,"Algo");
+    saturday.set(12,"WA");
     saturday.set(13,"Break");
     saturday.set(14,"-");
     saturday.set(15,"-");
