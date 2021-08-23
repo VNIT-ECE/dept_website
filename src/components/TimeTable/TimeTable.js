@@ -25,11 +25,10 @@ const TimeTable = () =>{
     setInterval(update,1);
     return(
         <div className="table_div">
-            <div className="toggle" onClick={()=>setShow(!show)}>
-                <h1 className="toggle_heading">Time Table - Semester V</h1>
-                <img src={ process.env.PUBLIC_URL + '/images/on.png' } className="img_on"></img>
+            <div className="flex justify-center">
+                <button type="button" className="px-6 py-3 my-5 shadow-md bg-teal-accent-700 hover:bg-teal-500 text-white" onClick={() => setShow(!show)}>{!show?("Full TimeTable"): ("Close TimeTable")}</button>
             </div>
-        {show?(<table className="Table">
+        {show?(<div className=" "><table className="Table w-full table-fixed" >
         <thead>
             <tr className="Header">
                 <th className="day_media">Day/Time</th>
@@ -46,43 +45,43 @@ const TimeTable = () =>{
             <tr>
                 <th className={day=="monday" ? "today_on" : "day"}>Monday</th>
                 {monday.map(Element =>(
-                    <th className={day=="monday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</th>
+                    <td className={day=="monday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</td>
                 ))}
-                
+
             </tr>
             <tr>
                 <th className={day=="tuesday" ? "today_on" : "day"}>Tuesday</th>
                 {tuesday.map(Element =>(
-                   <th className={day=="tuesday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</th>
+                   <td className={day=="tuesday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</td>
                 ))}
             </tr>
             <tr>
                 <th className={day=="wednesday" ? "today_on" : "day"}>Wednesday</th>
                 {wednesday.map(Element =>(
-                    <th className={day=="wednesday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</th>
+                    <td className={day=="wednesday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</td>
                 ))}
-              
+
             </tr>
             <tr>
                 <th className={day=="thursday" ? "today_on" : "day"}>Thursday</th>
                 {thursday.map(Element =>(
-                    <th className={day=="thursday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</th>
+                    <td className={day=="thursday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</td>
                 ))}
             </tr>
             <tr>
                 <th className={day=="friday" ? "today_on" : "day"}>Friday</th>
                 {friday.map(Element =>(
-                    <th className={day=="friday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</th>
+                    <td className={day=="friday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</td>
                 ))}
             </tr>
             <tr>
                 <th className={day=="saturday" ? "today_on" : "day"}>Saturday</th>
                 {saturday.map(Element =>(
-                    <th className={day=="saturday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</th>
+                    <td className={day=="saturday" && current==Element.value ? "today_onClass" : "class"}>{Element.value}</td>
                 ))}
             </tr>
             </tbody>
-        </table>): null}
+        </table></div>): null}
         </div>
     )
 
