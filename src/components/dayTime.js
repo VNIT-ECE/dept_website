@@ -3,9 +3,9 @@ const dayTime = () =>{
     var time2 = time.split(",");
     var timeFinal = time2[1];
     var hour = parseInt(timeFinal.split(":")[0]);
-    // hour = 10;
+    //  hour = 9;
     var day = time2[0].toLowerCase();
-    // day = "friday";
+    // day = "tuesday";
     var dayTime = new Map();
     dayTime.set("hour",hour);
     dayTime.set("day",day);
