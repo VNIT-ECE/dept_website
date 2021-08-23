@@ -151,12 +151,12 @@ if(hour>12){
 //  }
 
  var link = new Map();
- link.set("Waveguides & Antenna","https://vnit.webex.com/meet/akothari");
- link.set("Control Engineering","https://vnit.webex.com/join/punitbhavsar");
- link.set("Measurement & Instrumentation","https://vnit.webex.com/meet/ksurender");
- link.set("Embedded Systems","https://vnit.webex.com/meet/manishaparlewar.aapp");
- link.set("Analog Communication","https://vnit.webex.com/meet/ankitbhurane");
- link.set("Algorithms","https://i.ibb.co/SJ90KrZ/2451354.jpg");
+ link.set("WA","https://vnit.webex.com/meet/akothari");
+ link.set("CE","https://vnit.webex.com/join/punitbhavsar");
+ link.set("MI","https://vnit.webex.com/meet/ksurender");
+ link.set("ES","https://vnit.webex.com/meet/manishaparlewar.aapp");
+ link.set("AC","https://vnit.webex.com/meet/ankitbhurane");
+ link.set("Algo","https://i.ibb.co/SJ90KrZ/2451354.jpg");
  link.set("CMOS / CAO / ESD","https://i.ibb.co/SJ90KrZ/2451354.jpg");
 
  var linkOn = link.get(current);
