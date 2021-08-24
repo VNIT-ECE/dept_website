@@ -3,7 +3,7 @@ export default function Blog(){
         <section id="blog">
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="flex justify-center">
-                <div className="mx-auto text-center text-4xl rounded bg-teal-accent-400 shadow-xl my-10 px-6 py-3 text-white">Blog</div>
+                <div className="mx-auto text-center text-4xl rounded bg-teal-accent-700 shadow-xl my-10 px-6 py-3 text-white">Blog</div>
             </div>
             <div className="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
                 <div className="px-10 bg-white py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
@@ -77,7 +77,7 @@ export default function Blog(){
                 </div>
             </div>
             <div className="flex justify-center">
-                <button type="button" className="px-6 py-3 my-5 shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 text-white">See all posts</button>
+                <button type="button" className="px-6 py-3 my-5 shadow-md bg-teal-accent-700 hover:bg-teal-500 text-white">See all posts</button>
             </div>
         </div>
         </section>
