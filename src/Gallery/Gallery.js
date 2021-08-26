@@ -8,14 +8,14 @@ export default function Gallery(){
                 <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
                     <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
                         <img
-                            src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                            src="https://lh6.googleusercontent.com/c3g7l0uLvHtlJETI-X0rE-KZkFzSXNwXZJfULDl1cICam_CGvePiFVCaqYv5JVtbtnyG1UTH9w71rnd2uN6a=w1960-h3484-rw"
                             className="object-cover w-full h-64"
                             alt=""
                         />
                     </div>
                     <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
                         <img
-                            src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            src="https://lh4.googleusercontent.com/HVuzMkyt212Q5M4LrLhoxGQr8iYcfnZPGMBu7sQp_h9bWtuNpNzC04LHTlH62yClOGy3othHvHK-T2jGXrzF=w1960-h3484-rw"
                             className="object-cover w-full h-64"
                             alt=""
                         />

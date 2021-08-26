@@ -28,7 +28,7 @@ export default function Nav() {
                smooth={true}
               aria-label="Time Table"
               title="Time Table"
-              class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+              class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
             >
               Time Table
             </Link>
@@ -39,7 +39,7 @@ export default function Nav() {
                smooth={true}
               aria-label="Resources"
               title="Resources"
-              class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+              class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
             >
               Resources
             </Link>
@@ -50,7 +50,7 @@ export default function Nav() {
                smooth={true}
               aria-label="CGPA Calculator"
               title="CGPA Calculator"
-              class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+              class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
             >
               CGPA Calculator
             </Link>
@@ -61,7 +61,7 @@ export default function Nav() {
                smooth={true}
               aria-label="Blog"
               title="Blog"
-              class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+              class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
             >
               Blog
             </Link>
@@ -70,7 +70,7 @@ export default function Nav() {
             <Link
               to="/"
                smooth={true}
-              class="cursor-pointer inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-700 hover:bg-teal-500 focus:shadow-outline focus:outline-none"
+              class="cursor-pointer inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-3xl shadow-md bg-teal-accent-700 hover:bg-teal-500 focus:shadow-outline focus:outline-none"
               aria-label="Sem 5"
               title="Sem 5"
             >
@@ -147,7 +147,7 @@ export default function Nav() {
                         spy={true} smooth={true}
                         aria-label="Time Table"
                         title="Time Table"
-                        class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+                        class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
                       >
                         Time Table
                       </Link>
@@ -158,7 +158,7 @@ export default function Nav() {
                         spy={true} smooth={true}
                         aria-label="Resources"
                         title="Resources"
-                        class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+                        class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
                       >
                         Resources
                       </Link>
@@ -169,7 +169,7 @@ export default function Nav() {
                         spy={true} smooth={true}
                         aria-label="CGPA Calculator"
                         title="CGPA Calculator"
-                        class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+                        class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
                       >
                         CGPA Calculator
                       </Link>
@@ -180,7 +180,7 @@ export default function Nav() {
                         spy={true} smooth={true}
                         aria-label="Quick Links"
                         title="Quick Links"
-                        class="cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+                        class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
                       >
                         Quick Links
                       </Link>

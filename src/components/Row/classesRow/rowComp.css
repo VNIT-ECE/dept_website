@@ -115,9 +115,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    font-size: 5vw;
 
-    font-weight: 700;
     width: 100%;
 
 }
@@ -126,8 +124,7 @@
     flex: 2;
     padding-top: 1vw;
     padding-bottom: 1vw;
-    background-color: #1877f2;
-    color: white;
+    color: #1877f2;
     width: 100%;
 
 }
@@ -159,15 +156,14 @@
 }
 
 .Row__JoinButton_m{
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     background-color: #4CAF50;
     border: none;
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 5vw;
     cursor: pointer;
     width: 100%;
 }
@@ -176,12 +172,11 @@
     background-color: #9ca19d;
     border: none;
     color: white;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 5vw;
     cursor: pointer;
     width: 100%;
 }
@@ -207,7 +202,6 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.6vw;
     cursor: pointer;
     width: 100%;
 }
@@ -221,7 +215,6 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.6vw;
     cursor: pointer;
     width: 100%;
 }

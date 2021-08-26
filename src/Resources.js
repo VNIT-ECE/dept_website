@@ -16,18 +16,19 @@ const Resources = ()=> {
   return(
     <section id="resources">
 
-    <div className="flex justify-center">
-      <div className="mx-auto text-center text-4xl rounded bg-teal-accent-700 shadow-xl my-10 px-6 py-3 text-white">Resources</div>
-    </div>
+      <div className="mx-auto text-center my-10">
+        <div className="text-5xl font-bold text-black">Resources</div>
+        <p className="text-lg text-black font-normal mt-5">Get important books, notes, youtube channel, assignment and <br /> syllabus at one place.</p>
+      </div>
 
-    <div className="flex justify-center flex-wrap relative bg-gray-100">
+      <div className="flex justify-center flex-wrap relative green-gradient-bg rounded-3xl p-5">
 
       {subs.map((sub)=>{
         return (<SubjectCard key={sub.id} data={sub} call={showModal} />);
       })}
 
       {
-        modalContent? <ModalBox modalContent={modalContent} call={showModal} />: null
+        modalContent? <ModalBox modalContent={modalContent} call={showModal}  />: null
       }
     </div>
     </section>

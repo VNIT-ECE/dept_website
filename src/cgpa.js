@@ -102,27 +102,28 @@ function Cgpa() {
         setNewCG(0);
         setPrevCred(0);
         setSG(0);
-        subjects.map((item,i)=>{document.getElementById(i).disabled = false;})
+        // subjects.map((item,i)=>{document.getElementById(i).disabled = false;})
 
     }
     return (
         <section id="cgpa_calc">
-        <div className="flex justify-center">
-          <div className="mx-auto text-center text-4xl rounded bg-teal-accent-700 shadow-xl my-10 px-6 py-3 text-white">CGPA Calculator</div>
-        </div>
+            <div className="mx-auto text-center mt-20 mb-10">
+                <div className="text-5xl font-bold text-black">CGPA Calculator</div>
+                <p className="text-lg text-black font-normal mt-5">Get important books, notes, youtube channel, assignment and <br /> syllabus at one place.</p>
+            </div>
         <div className="flex flex-col h-auto">
         <div className="flex justify-center">
-          <button type="button" className ="px-6 py-3 shadow-md bg-teal-accent-700 hover:bg-teal-accent-700 text-white" onClick={refresh}>Reset</button>
+                    <button type="button" className="px-6 py-3 rounded-3xl shadow-md bg-teal-accent-700 hover:bg-teal-500 text-white " onClick={refresh}>Reset</button>
         </div>
         <div className="flex justify-between items-start flex-wrap w-full mt-10">
 
         {/*Left Part*/}
-        <div className="shadow-xl px-10 py-5 w-auto">
-          <h4 className="font-semibold text-xl mb-5">Enter grades to calculate current sem SGPA</h4>
+        <div className="shadow-xl rounded-3xl px-10 py-5 w-auto">
+          <h4 className="font-semibold text-xl my-5">Enter grades to calculate current sem SGPA</h4>
           <form action="">
                   {subjectList}
                   <div className="flex justify-center">
-                      <button type = "button" className ="px-6 py-3 my-5 shadow-md bg-teal-accent-700 hover:bg-teal-500 text-white" onClick={calcSG}>Calculate SG</button>
+                      <button type = "button" className ="px-6 py-3 my-5 rounded-3xl shadow-md bg-teal-accent-700 hover:bg-teal-500 text-white" onClick={calcSG}>Calculate SG</button>
                   </div>
           </form>
         </div>
@@ -131,15 +132,14 @@ function Cgpa() {
         {/*Right Part*/}
 
 
-        <div className="shadow-xl px-10 py-5 w-auto">
+        <div className="shadow-xl rounded-3xl px-10 py-5 w-auto">
             <div className="">
                 {calculated ? <h3 className="font-semibold my-3">Your SGPA for the current sem: {SG} </h3> : <p> </p>}
             </div>
             <div>
                     {!calculated?
                     <form action="">
-                        <h4 className="font-semibold text-xl mb-5">Directly calculate CGPA</h4>
-
+                        <h4 className="font-semibold text-xl my-5">Directly calculate CGPA</h4>
                         <div className="flex justify-between mb-4">
                             <label htmlFor="">SGPA for current sem: </label>
                             <input type="number" step="0.01" max="10" min="3" className="border-2 ml-2" onChange={(e) => setSG(e.target.value)}/>
@@ -165,7 +165,7 @@ function Cgpa() {
                         <input type="number" max="200" min="3" className="border-2 ml-2" onChange={(e) => setPrevCred(e.target.value)}/>
                     </div>
                     <div className="flex justify-center">
-                        <button type="button" className ="px-6 py-3 my-5 shadow-md bg-teal-accent-700 hover:bg-teal-500 text-white" onClick={CGcalc}>Calculate CG</button>
+                        <button type="button" className ="px-6 py-3 my-5 rounded-3xl shadow-md bg-teal-accent-700 hover:bg-teal-500 text-white" onClick={CGcalc}>Calculate CG</button>
                     </div>
                 </form>
 
