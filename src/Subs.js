@@ -19,7 +19,12 @@ const subs = [
         assignment:
             [
                 "https://docs.google.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
-            ]
+            ],
+            
+    syllabus:
+    [
+            "Signal Analysis: Fourier Series representation of periodic signals, Fourier transform, Properties of Fourier transform, Convolution, Analysis of Linear time invariant system. Transmission of signals through systems: Criteria for distortion less transmission, ideal filters, distortions in practical systems, power and energy of signals.Amplitude modulation: Need of modulation, AM DSB-SC, SSB-SC and vestigial side band modulation and demodulation, AM transmitter (broadcast and low power), FDM. Angle modulation: FM and PM, reactance FET modulator Armstrong method, Foster- Seely discriminator, PLL detector, Stereophonic FM, Spectrum of FM, Narrow band and wide band FM, FM transmitter (broadcast and low power). Radio receivers : TRF and super-heterodyne receiver, AGC, FM receiver, sensitivity, selectivity, image frequency rejection measurements, block schematic of communication receiver and its special features. Transceivers for wireless mobile communication devices. Analog pulse modulation: Sampling theorem, PAM, PWM, PPM, generation & detection of these pulse modulated signals, TDM, Noise in communication systems. "
+    ]
     },
     
 
@@ -40,6 +45,10 @@ const subs = [
         assignment:
             [
                 "https://docs.gogle.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
+            ],
+        syllabus:
+            [
+                "https://docs.google.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
             ]
     },
 
@@ -58,7 +67,11 @@ const subs = [
             [""],
         assignment:
             [
-                "  "
+                ""
+            ],
+        syllabus:
+            [
+                "https://docs.google.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
             ]
     },
 
@@ -77,6 +90,10 @@ const subs = [
         assignment:
             [
                 "  "
+            ],
+        syllabus:
+            [
+                "https://docs.google.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
             ]
     },
 
@@ -95,6 +112,10 @@ const subs = [
         assignment:
             [
                 "  "
+            ],
+        syllabus:
+            [
+                "https://docs.google.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
             ]
     },
 
@@ -110,6 +131,10 @@ const subs = [
         assignment:
             [
                 " "
+            ],
+        syllabus:
+            [
+                "https://docs.google.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
             ]
     },
 
@@ -125,6 +150,10 @@ const subs = [
         assignment:
             [
                 " "
+            ],
+        syllabus:
+            [
+                "https://docs.google.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
             ]
     },
 
@@ -140,6 +169,10 @@ const subs = [
         assignment:
             [
                 " "
+            ],
+        syllabus:
+            [
+                "https://docs.google.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
             ]
     },
 
@@ -155,6 +188,10 @@ const subs = [
         assignment:
             [
                 " "
+            ],
+        syllabus:
+            [
+                "https://docs.google.com/document/d/1yBaa4bjbQeh-nCjW17ZGQ-O6nICssYUIxZ5geQdCTUU/edit"
             ]
     }
 ];

@@ -1,4 +1,4 @@
-
++
 
 
 .toggle{
@@ -27,23 +27,19 @@
 }
 
 
-.img_on{
-    margin-left: 1vw;
-    width: 3vw;
-    color: #1877f2;
-}
+
 .Table{
-    display: block;
     overflow-y: auto;
     table-layout: fixed;
     animation: table_appear 0.5s ease 1 forwards;
 }
 
 
-.Table th{
+.Table th,td{
+    text-align: center;
 
-    padding-left: 5px;
-    padding-right: 5px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
     padding-top: 12.5px;
     padding-bottom: 12.5px;
     border: 3px solid transparent;
@@ -59,7 +55,7 @@ thead{
 }
 
 .today_on{
-    color : #1877f2;
+    color : #4CAF50;
     animation: blink 1s linear  infinite  ;
 }
 .today_onClass{
@@ -75,16 +71,16 @@ thead{
 @media all and (max-width:480px) {
 
 .Table{
-    font-size: 5vw;
+    display: block;
     overflow-y: auto;
 }
 
-    .Table th {
+    .Table th,td {
 
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding-top: 12px;
+    padding-bottom: 12px; */
     }
 
 
@@ -107,7 +103,7 @@ thead{
         animation: blink3 1s linear infinite;
     }
     .day_media{
-        background-color:#1877f2;
+        background-color:#00bfa5;
         color: white;
         position: sticky;
         left: 0;

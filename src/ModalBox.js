@@ -20,7 +20,8 @@ const changeContent = (e) => {
               <button className={"p-2 m-2 shadow " + (contentType === 0 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={()=>changeContent(0)}>Books</button>
               <button className={"p-2 m-2 shadow " + (contentType === 1 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={() =>changeContent(1)}>Notes</button>
               <button className={"p-2 m-2 shadow " + (contentType === 2 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={() =>changeContent(2)}>YT Channel</button>
-              <button className={"p-2 m-2 shadow " + (contentType === 3 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={() => changeContent(3)}>Assignment</button>
+              {/* <button className={"p-2 m-2 shadow " + (contentType === 3 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={() => changeContent(3)}>Assignment</button> */}
+              <button className={"p-2 m-2 shadow " + (contentType === 4 ? "bg-teal-accent-700 text-white" : "bg-white")} onClick={() => changeContent(4)}>Syllabus</button>
            </div>
            <div className="p-2 m-2 cursor-pointer" onClick={()=>props.call(null)}>
              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -37,26 +38,50 @@ const changeContent = (e) => {
 
           :
 
-            (contentType === 1?
+            (
+              
+              contentType === 1?
 
               props.modalContent.notes.map((note) => {
                 return <iframe key={note} className="w-full" title={note} src={note}></iframe>
 
               })
 
-              :(
-                contentType === 2 ?
-              props.modalContent.yt.map((yt_link) => {
-                return <iframe key={yt_link} className="w-full" title={yt_link} src={yt_link}></iframe>
-              }):
-              props.modalContent.assignment.map((link) => {
-                return(
-                <div>
-                    <a key={link} className="text-md underline w-full h-96" target="_blank" rel="noreferrer" href={link}>{link}</a>
-                </div>);
-              })
+              :
+              
+              (
+
+
+                    contentType === 2 ?
+                  props.modalContent.yt.map((yt_link) => {
+                    return <iframe key={yt_link} className="w-full" title={yt_link} src={yt_link}></iframe>
+                  }):
+
+                  (
+                    
+                    contentType === 3? 
+                    
+                    props.modalContent.assignment.map((link) => {
+                    return(
+                    <div>
+                        <a key={link} className="text-md underline w-full h-96" target="_blank" rel="noreferrer" href={link}>{link}</a>
+                    </div>)})
+                    :
+                    
+                    
+                  props.modalContent.syllabus.map((syllabus) => {
+                    return(
+                    <div>
+                        <p key={syllabus} className="text-md w-full h-96">{syllabus}</p>
+                    </div>);
+                  })
+                  
+                  )
+              
               )
-              )
+
+
+            )
 
           }
 
