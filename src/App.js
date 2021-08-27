@@ -1,14 +1,14 @@
 import React from "react";
-import Resources from "./Resources";
-import Hero from "./Hero";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Resources from "./Resources/Resources";
+import Hero from "./Top/Hero";
+import Nav from "./Top/Nav";
+import Footer from "./Bottom/Footer";
 import Row from "./components/Row/Row";
 import TimeTable from "./components/TimeTable/TimeTable";
 import './App.css';
-import CGPA from "./cgpa";
-import Blog from "./Blog";
-import Contact from "./Contact";
+import CGPA from "./CGPA/cgpa";
+import Blog from "./Bottom/Blog";
+import Contact from "./Bottom/Contact";
 import Gallery from "./Gallery/Gallery";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import SubjectCard from "../SubjectCard";
+import SubjectCard from "./SubjectCard";
 import ModalBox from "./ModalBox";
 import subs from "./Subs"
 

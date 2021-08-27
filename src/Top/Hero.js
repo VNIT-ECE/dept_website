@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import Assign from "./components/Assignments/Assign"
+import Assign from "../components/Assignments/Assign"
 
 export default function Hero (){
   return (
@@ -59,7 +59,7 @@ export default function Hero (){
             >
               Gallery
             </a> */}
-            <Assign sem="3"/>
+            <Assign sem="5"/>
 
           </div>
         </div>
