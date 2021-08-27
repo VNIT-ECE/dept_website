@@ -22,13 +22,12 @@ function Assign(props) {
     // }
     // else
     //     setDeadlines("https://docs.google.com/spreadsheets/d/1bs6k_aaVm93hCB5_JeLgN1PegW7PPwfn5kgPjS2x7cw/edit?usp=sharing");
-
     return (
+        <div>
         <div className="">
-            <div className="flex justify-center">
-                {/* <Link to="https://docs.google.com/spreadsheets/d/1bs6k_aaVm93hCB5_JeLgN1PegW7PPwfn5kgPjS2x7cw/edit?usp=sharing">
-                    <button type="button" className="btn-info px-6 py-3 rounded-3xl shadow-md bg-teal-accent-700 hover:bg-teal-500 text-white" >Assignments and Deadlines</button>
-                </Link> */}
+            
+            <div>
+                
                 <a
               href={deadlines}
               aria-label=""
@@ -38,7 +37,7 @@ function Assign(props) {
             </a>
             </div>
         </div>
+        </div>
     )
-}
-
-export default Assign
+    }
+    export default Assign

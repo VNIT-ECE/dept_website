@@ -1,8 +1,9 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 
 
-function Cgpa() {
-    const subjects = [
+function Cgpa(props) {
+    const [subjects,setSubjects] = useState([]);
+    const sem5 = [
         {name : 'Control Engineering - Theory', credits: 3},
         {name : 'Control Engineering - Practical', credits: 1},
         {name : 'Embedded Systems - Theory', credits: 3},
@@ -14,6 +15,25 @@ function Cgpa() {
         {name:'Wave Guides and Antennas', credits: 3},
         {name: 'CAO/CMOS/ESD/ALGO', credits: 3}
     ]
+    const sem3 = [
+        {name : 'Linear Algebra & Application', credits: 4},
+        {name : 'Linear Networ Theory', credits: 3},
+        {name : 'Electronic Devices  - Theory', credits: 4},
+        {name : 'Electronic Devices - Practical', credits: 1},
+        {name : 'Object Oriented Programming', credits: 3},
+        {name: 'Analog Communication - Practical', credits: 1},
+        {name: 'Signals and systems analysis - Theory', credits: 4},
+        {name:'Signals and systems analysis - Practical', credits: 1},
+        {name: 'OC/HM', credits: 3}
+    ]
+     useEffect(() => {
+        if(props.sem==3)
+        setSubjects(sem3);
+        else
+        setSubjects(sem5);
+
+    //   console.log("inside");
+  },[props.sem]);
     // const [cred,setCred] = useState(0);
     const [calculated,setCalculated] = useState(false);
      const [SG,setSG] = useState(0);

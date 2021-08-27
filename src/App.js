@@ -10,6 +10,7 @@ import CGPA from "./CGPA/cgpa";
 import Blog from "./Bottom/Blog";
 import Contact from "./Bottom/Contact";
 import Gallery from "./Gallery/Gallery";
+import Deadlines from "./components/Assignments/Assign"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -28,7 +29,8 @@ function App() {
                 <TimeTable />
             </div>
             <Resources />
-            <CGPA />
+            <Deadlines/>
+            <CGPA/>
             <Blog /> 
             <Contact />
           </Route>

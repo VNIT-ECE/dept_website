@@ -79,7 +79,6 @@ export default function Nav() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </Link>
-            
           </li>
         </ul>
         <div class="lg:hidden">
@@ -190,7 +189,7 @@ export default function Nav() {
                       <Link
                         to="/"
                         spy={true} smooth={true}
-                        class="cursor-pointer inline-flex items-center justify-center w-full h-12 rounded-3xl px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-700 hover:bg-teal-500 focus:shadow-outline focus:outline-none"
+                        class="cursor-pointer inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none"
                         aria-label="Sem 5"
                         title="Sem 5"
                       >
