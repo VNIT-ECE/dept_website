@@ -19,7 +19,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
 
-  const [currSem, setCurrSem] = useState(5);
+  const [currSem, setCurrSem] = useState(3);
 
   return (
     <Router>

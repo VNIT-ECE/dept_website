@@ -1,4 +1,4 @@
-const classes = () => {
+const classes = (sem) => {
   const dayTimeData = require('../dayTime');
   const dayTime = dayTimeData();
   var day = dayTime.get("day");
@@ -9,7 +9,7 @@ const classes = () => {
   // console.log(day);
 
   const timeTableData = require('../timeTableData');
-  const timeTable = timeTableData();
+  const timeTable = timeTableData(sem);
 
   const monday = timeTable.get("monday");
   const tuesday = timeTable.get("tuesday");
@@ -158,6 +158,8 @@ const classes = () => {
   link.set("AC", "https://vnit.webex.com/meet/ankitbhurane");
   link.set("Algo", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
   link.set("CMOS / CAO / ESD", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("OOP", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
 
   var linkOn = link.get(current);
   var linkUp = link.get(upcoming);

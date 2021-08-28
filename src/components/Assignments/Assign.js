@@ -8,7 +8,7 @@ function Assign(props) {
     const sem3 = "https://docs.google.com/spreadsheets/d/10-B3P532UoO4C2j-jGTAMX-WWCS53UqT3Jq2cDkSYOA/edit?usp=sharing";
     // console.log(props.sem);
     useEffect(() => {
-        if(props.sem===3)
+        if(props.sem==3)
         setDeadlines(sem3);
         else
         setDeadlines(sem5);
@@ -24,16 +24,14 @@ function Assign(props) {
     //     setDeadlines("https://docs.google.com/spreadsheets/d/1bs6k_aaVm93hCB5_JeLgN1PegW7PPwfn5kgPjS2x7cw/edit?usp=sharing");
     return (
         <div>
-        <div className="flex justify-center mt-5">
+        <div className="">
             
             <div>
                 
                 <a
               href={deadlines}
               aria-label=""
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm inline-flex items-center justify-center h-12 px-6 py-3 rounded-3xl font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-700 hover:bg-teal-500 focus:shadow-outline focus:outline-none"
+              className="inline-flex items-center justify-center h-12 px-6 py-3 rounded-3xl font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-700 hover:bg-teal-500 focus:shadow-outline focus:outline-none"
             >
               Assignments & Deadlines
             </a>

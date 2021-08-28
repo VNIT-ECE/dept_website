@@ -3,11 +3,11 @@ import './TimeTable.css'
 const timeTableData = require('../timeTableData')
 const dayTime = require('../dayTime')
 const classes = require('../Row/code')
-const TimeTable = () => {
+const TimeTable = ({sem}) => {
 
-    var timeTable = timeTableData();
+    var timeTable = timeTableData(sem);
     var timeDate = dayTime();
-    var currentC = classes()
+    var currentC = classes(sem)
     const [day, setDay] = useState();
     const [hour, setHour] = useState(timeDate.get("hour"));
     const [current, setCurrent] = useState("");
@@ -26,7 +26,7 @@ const TimeTable = () => {
     return (
         <div className="table_div">
             <div className="flex justify-center">
-                <button type="button" className="rounded-full px-6 py-3 my-5 shadow-md bg-teal-accent-700 hover:bg-teal-500 text-white" onClick={() => setShow(!show)}>{!show ? ("Full TimeTable") : ("Close TimeTable")}</button>
+                <button type="button" className="px-6 py-3 my-5 shadow-md bg-teal-accent-700 hover:bg-teal-500 text-white" onClick={() => setShow(!show)}>{!show ? ("Full TimeTable") : ("Close TimeTable")}</button>
             </div>
             {show ? (<div className=" "><table className="Table w-full table-fixed" >
                 <thead>
@@ -39,6 +39,8 @@ const TimeTable = () => {
                         <th>1:00</th>
                         <th>2:00</th>
                         <th>3:00</th>
+                        <th>4:00</th>
+                        <th>5:00</th>
                     </tr>
                 </thead>
                 <tbody>
