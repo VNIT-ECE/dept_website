@@ -27,7 +27,7 @@ function App() {
         <Nav currSem = {currSem} setCurrSem={setCurrSem} />
         <Switch>
           <Route exact path="/">
-            <Hero />
+            <Hero sem={currSem} />
             <div className="App__Container">
                 <Row sem={currSem} />
               <TimeTable sem={currSem} />

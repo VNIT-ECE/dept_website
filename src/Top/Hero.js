@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import Assign from "../components/Assignments/Assign"
 
-export default function Hero (){
+export default function Hero (props){
   return (
     <div className="mb-16">
       <div className="bg-gray-50">
@@ -59,7 +59,7 @@ export default function Hero (){
             >
               Gallery
             </a>  */}
-            <Assign sem="5"/>
+            <Assign sem={props.sem} />
 
           </div>
         </div>

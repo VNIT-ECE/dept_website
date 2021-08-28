@@ -1,20 +1,20 @@
 export default function Blog(){
     return (
         <section id="blog">
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="px-4 py-16 mx-auto md:px-24 lg:px-8 lg:py-20 ">
                 <div className="mx-auto text-center mt-20 mb-10">
                     <div className="text-3xl sm:text-5xl font-bold text-black">Quick Links</div>
                     <p className="sm:text-lg text-black font-normal mt-5">Get important books, notes, youtube channel, assignment and <br /> syllabus at one place.</p>
                 </div>
-            <div className="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
-                <div className="px-10 rounded-3xl bg-white py-20 text-center rounded lg:px-5 lg:py-10 xl:py-10 shadow-xl hover:shadow-2xl">
+                <div className="grid gap-5 mb-8 lg:grid-cols-3 sm:p-10 rounded-3xl w-full bg-gradient-to-r from-teal-300 via-teal-accent-600 to-teal-accent-400">
+                <div className="px-10 m-5 rounded-3xl bg-white py-20 text-center rounded lg:px-5 lg:py-10 xl:py-10 shadow-xl hover:shadow-2xl">
                     <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
                         GUIDE
                     </p>
                     <p
                         className="inline-block max-w-xs mx-auto mb-3 text-xl sm:text-2xl font-extrabold leading-7"
                         aria-label="Read article"
-                            title="Software Installation Guide"
+                            title="Software Installation Guide" 
                     >
                         Software Installation Guide
                     </p>
@@ -31,7 +31,7 @@ export default function Blog(){
                         Read more
                     </a>
                 </div>
-                <div className="px-10 rounded-3xl bg-white py-20 text-center rounded lg:px-5 lg:py-10 xl:py-10 shadow-xl hover:shadow-2xl">
+                <div className="px-10 m-5 rounded-3xl bg-white py-20 text-center rounded lg:px-5 lg:py-10 xl:py-10 shadow-xl hover:shadow-2xl">
                     <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
                         Gallery
                     </p>
@@ -60,7 +60,7 @@ export default function Blog(){
                         Read more
                     </a>
                 </div>
-                <div className="px-10 rounded-3xl bg-white py-20 text-center rounded lg:px-5 lg:py-10 xl:py-10 shadow-xl hover:shadow-2xl">
+                <div className="px-10 m-5 rounded-3xl bg-white py-20 text-center rounded lg:px-5 lg:py-10 xl:py-10 shadow-xl hover:shadow-2xl">
                         <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
                             MAGAZINE
                         </p>
