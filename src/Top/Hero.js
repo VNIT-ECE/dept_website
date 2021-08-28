@@ -1,4 +1,6 @@
 import { Link } from "react-scroll";
+import Assign from "../components/Assignments/Assign"
+
 export default function Hero (){
   return (
     <div className="mb-16">
@@ -50,13 +52,15 @@ export default function Hero (){
             >
               Get started
             </Link> */}
-            <a
+            {/* <a
               href="/gallery"
               aria-label=""
               className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-700 hover:bg-teal-500 focus:shadow-outline focus:outline-none"
             >
               Gallery
-            </a>
+            </a>  */}
+            <Assign sem="5"/>
+
           </div>
         </div>
       </div>
