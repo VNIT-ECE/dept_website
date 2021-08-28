@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Router>
-      <div className="max-w-6xl mx-auto relative">
+      <div id="top" className="max-w-6xl mx-auto relative">
         <Nav currSem = {currSem} setCurrSem={setCurrSem} />
         <Switch>
           <Route exact path="/">
