@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Resources from "./Resources/Resources";
 import Hero from "./Top/Hero";
 import Nav from "./Top/Nav";
@@ -16,21 +16,25 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 
+
 function App() {
+
+  const [currSem, setCurrSem] = useState(5);
+
   return (
     <Router>
       <div className="max-w-6xl mx-auto relative">
-        <Nav />
+        <Nav currSem = {currSem} setCurrSem={setCurrSem} />
         <Switch>
           <Route exact path="/">
             <Hero />
             <div className="App__Container">
-                <Row />
-                <TimeTable />
+                <Row sem={currSem} />
+              <TimeTable sem={currSem} />
             </div>
-            <Resources />
-            <Deadlines/>
-            <CGPA/>
+            <Resources sem={currSem} />
+            <Deadlines sem={currSem}/>
+            <CGPA sem={currSem}/>
             <Blog /> 
             <Contact />
           </Route>

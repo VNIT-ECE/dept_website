@@ -19,11 +19,11 @@ export default function Footer() {
           </a>
           <div className="mt-4 lg:max-w-sm">
             <p className="text-sm text-gray-800">
-              Electronics and Communication Department
+              Electronics and Communication Department,<br /> VNIT Nagpur
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
+        <div className="grid text-sm sm:text-base grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
           <div>
             <p className="font-semibold tracking-wide text-gray-800">
               Menu

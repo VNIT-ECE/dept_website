@@ -1,10 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
-export default function Nav() {
+export default function Nav({currSem, setCurrSem}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
 
   return (
-    
+
     <div class="z-0 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-0 lg:px-0 sticky top-0 z-40 backdrop-filter backdrop-blur-sm bg-white bg-opacity-40">
       <div class="relative flex items-center justify-between">
         <Link
@@ -14,9 +15,9 @@ export default function Nav() {
           title="ECE"
           class="cursor-pointer inline-flex items-center"
         >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-        </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+          </svg>
           <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
             ECE
           </span>
@@ -25,7 +26,7 @@ export default function Nav() {
           <li>
             <Link
               to="timetable"
-               smooth={true}
+              smooth={true}
               aria-label="Time Table"
               title="Time Table"
               class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
@@ -36,7 +37,7 @@ export default function Nav() {
           <li>
             <Link
               to="resources"
-               smooth={true}
+              smooth={true}
               aria-label="Resources"
               title="Resources"
               class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
@@ -47,7 +48,7 @@ export default function Nav() {
           <li>
             <Link
               to="cgpa_calc"
-               smooth={true}
+              smooth={true}
               aria-label="CGPA Calculator"
               title="CGPA Calculator"
               class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
@@ -58,27 +59,24 @@ export default function Nav() {
           <li>
             <Link
               to="blog"
-               smooth={true}
+              smooth={true}
               aria-label="Blog"
               title="Blog"
               class="cursor-pointer font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
             >
-              Blog
+              Quick Links
             </Link>
           </li>
           <li>
-            <Link
-              to="/"
-               smooth={true}
+            <button
               class="cursor-pointer inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-3xl shadow-md bg-teal-accent-700 hover:bg-teal-500 focus:shadow-outline focus:outline-none"
-              aria-label="Sem 5"
-              title="Sem 5"
+              onClick={currSem === 5 ? (() => setCurrSem(3)) : (() => setCurrSem(5))}
             >
-              Sem 5
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              {"Sem " + currSem}
+              <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z" />
               </svg>
-            </Link>
+            </button>
           </li>
         </ul>
         <div class="lg:hidden">
@@ -115,9 +113,9 @@ export default function Nav() {
                       title="ECE"
                       class="cursor-pointer inline-flex items-center"
                     >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                      </svg>
                       <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                         ECE
                       </span>
@@ -140,7 +138,7 @@ export default function Nav() {
                   </div>
                 </div>
                 <nav>
-                  <ul class="space-y-4">
+                  <ul class="text-sm space-y-4">
                     <li>
                       <Link
                         to="timetable"
@@ -186,18 +184,15 @@ export default function Nav() {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/"
-                        spy={true} smooth={true}
-                        class="cursor-pointer inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none"
-                        aria-label="Sem 5"
-                        title="Sem 5"
+                      <button
+                        class="cursor-pointer inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-accent-700 hover:bg-teal-500 focus:shadow-outline focus:outline-none"
+                        onClick={currSem === 5 ? (() => setCurrSem(3)) : (() => setCurrSem(5))}
                       >
-                        Sem 5
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        {"Sem " + -currSem}
+                        <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                           <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z" />
                         </svg>
-                      </Link>
+                      </button>
                     </li>
                   </ul>
                 </nav>

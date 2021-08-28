@@ -25,11 +25,11 @@ const Row = () => {
     return (
         <section id="timetable">
             <div className="mx-auto text-center my-10">
-                <div className="text-5xl font-bold text-black">Time Table</div>
-                <p className="text-lg text-black font-normal mt-5">Get important books, notes, youtube channel, assignment and <br /> syllabus at one place.</p>
+                <div className="text-3xl sm:text-5xl font-bold text-black">Time Table</div>
+                <p className="sm:text-lg text-black font-normal mt-5 px-16">Get important books, notes, youtube channel, assignment and syllabus at one place.</p>
             </div>
-            <RowComp row_type="Ongoing Class" class_name={onClass} time_of_class={onTime} join_link={onLink} button_status={(onClass == "No Ongoing Class") ? 0 : 1}></RowComp>
-            <RowComp row_type="Upcoming Class" class_name={upClass} time_of_class={upTime} join_link={upLink} button_status={(upClass == "No Upcoming Class") ? 0 : 1} ></RowComp>
+            <RowComp row_type="Ongoing Class" class_name={onClass} time_of_class={onTime} join_link={onLink} button_status={(onClass === "No Ongoing Class") ? 0 : 1}></RowComp>
+            <RowComp row_type="Upcoming Class" class_name={upClass} time_of_class={upTime} join_link={upLink} button_status={(upClass === "No Upcoming Class") ? 0 : 1} ></RowComp>
         </section>
     )
 }

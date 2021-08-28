@@ -128,8 +128,8 @@ function Cgpa(props) {
     return (
         <section id="cgpa_calc">
             <div className="mx-auto text-center mt-20 mb-10">
-                <div className="text-5xl font-bold text-black">CGPA Calculator</div>
-                <p className="text-lg text-black font-normal mt-5">Get important books, notes, youtube channel, assignment and <br /> syllabus at one place.</p>
+                <div className="text-3xl sm:text-5xl font-bold text-black">CGPA Calculator</div>
+                <p className="sm:text-lg text-black font-normal mt-5 px-12">Get important books, notes, youtube channel, assignment and  syllabus at one place.</p>
             </div>
         <div className="flex flex-col h-auto">
         <div className="flex justify-center">
@@ -138,8 +138,8 @@ function Cgpa(props) {
         <div className="flex justify-between items-start flex-wrap w-full mt-10">
 
         {/*Left Part*/}
-        <div className="shadow-xl rounded-3xl px-10 py-5 w-auto">
-          <h4 className="font-semibold text-xl my-5">Enter grades to calculate current sem SGPA</h4>
+        <div className="m-4 sm:m-0 shadow-xl text-sm sm:text-base rounded-3xl px-6 sm:px-10 py-5 w-auto">
+          <h4 className="font-semibold text-xl my-5 text-center">Enter grades to calculate current sem SGPA</h4>
           <form action="">
                   {subjectList}
                   <div className="flex justify-center">
@@ -152,14 +152,14 @@ function Cgpa(props) {
         {/*Right Part*/}
 
 
-        <div className="shadow-xl rounded-3xl px-10 py-5 w-auto">
+        <div className="m-4 sm:m-0 shadow-xl text-sm sm:text-base rounded-3xl px-6 sm:px-10 py-5 w-full sm:w-auto">
             <div className="">
                 {calculated ? <h3 className="font-semibold my-3">Your SGPA for the current sem: {SG} </h3> : <p> </p>}
             </div>
             <div>
                     {!calculated?
                     <form action="">
-                        <h4 className="font-semibold text-xl my-5">Directly calculate CGPA</h4>
+                        <h4 className="font-semibold text-xl my-5 text-center">Directly calculate CGPA</h4>
                         <div className="flex justify-between mb-4">
                             <label htmlFor="">SGPA for current sem: </label>
                             <input type="number" step="0.01" max="10" min="3" className="border-2 ml-2" onChange={(e) => setSG(e.target.value)}/>
