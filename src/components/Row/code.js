@@ -156,10 +156,21 @@ const classes = (sem) => {
   link.set("MI", "https://vnit.webex.com/meet/ksurender");
   link.set("ES", "https://vnit.webex.com/meet/manishaparlewar.aapp");
   link.set("AC", "https://vnit.webex.com/meet/ankitbhurane");
-  link.set("Algo", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
-  link.set("CMOS / CAO / ESD", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("Algo", "");
+  link.set("CMOS / CAO / ESD", "");
   link.set("OOP", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
-  link.set("", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("SNS", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("LA", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("EDC", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("LNT", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("OC", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("HM", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("SNS(B1)", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("SNS(B2)", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("SNS(B3)", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("SNS(B4)", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  link.set("EDC(Lab)", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
+  
 
   var linkOn = link.get(current);
   var linkUp = link.get(upcoming);

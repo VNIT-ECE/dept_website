@@ -1,7 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import RowComp from './classesRow/rowComp'
 
 const classes = require('./code');
+const dayTime = require('../dayTime')
+var timeDate = dayTime();
+var hour = timeDate.get("hour")
 
 const Row = ({sem}) => {
 
@@ -13,6 +16,11 @@ const Row = ({sem}) => {
     const [upLink, setUpLink] = useState("");
 
     const setter = () => {
+        timeDate = dayTime();
+        hour = timeDate.get("hour")
+    }
+    setInterval(setter,1)
+    useEffect(()=>{
         var data = classes(sem);
         setOnClass(data.ongoingClass);
         setOnTime(data.ongoingClassTime);
@@ -20,8 +28,7 @@ const Row = ({sem}) => {
         setUpClass(data.upcomingClass);
         setUpTime(data.upcomingClassTime);
         setUpLink(data.upcomingLink);
-    }
-    setInterval(setter, 1)
+    },[sem,hour])
     return (
         <section id="timetable">
             <div className="mx-auto text-center my-10">
