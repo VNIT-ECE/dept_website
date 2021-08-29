@@ -24,7 +24,7 @@ function Assign(props) {
     //     setDeadlines("https://docs.google.com/spreadsheets/d/1bs6k_aaVm93hCB5_JeLgN1PegW7PPwfn5kgPjS2x7cw/edit?usp=sharing");
     return (
         <div>
-        <div className="">
+        <div className="flex justify-center">
             
             <div>
                 

@@ -33,7 +33,6 @@ function App() {
               <TimeTable sem={currSem} />
             </div>
             <Resources sem={currSem} />
-            <Deadlines sem={currSem}/>
             <CGPA sem={currSem}/>
             <Blog /> 
             <Contact />
