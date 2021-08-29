@@ -1,6 +1,6 @@
 const timeTableData = (sem) =>{
 
-    if (sem == 3){
+    if (sem === 3){
 
         var monday = new Map();
         monday.set(9,"-");
@@ -70,7 +70,7 @@ const timeTableData = (sem) =>{
     
         }
 
-    if (sem == 5){
+    if (sem === 5){
 
     var monday = new Map();
     monday.set(9,"-");
