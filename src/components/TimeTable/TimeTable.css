@@ -1,6 +1,5 @@
 
 
-
 .toggle{
     cursor: pointer;
     display: flex;
@@ -103,8 +102,8 @@ thead{
         animation: blink3 1s linear infinite;
     }
     .day_media{
-        background-color:#00bfa5;
-        color: white;
+        background-color:white;
+        color: #00bfa5;
         position: sticky;
         left: 0;
         top:0;
