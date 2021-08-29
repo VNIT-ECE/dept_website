@@ -156,8 +156,8 @@ const classes = (sem) => {
   link.set("MI", "https://vnit.webex.com/meet/ksurender");
   link.set("ES", "https://vnit.webex.com/meet/manishaparlewar.aapp");
   link.set("AC", "https://vnit.webex.com/meet/ankitbhurane");
-  link.set("Algo", "");
-  link.set("CMOS / CAO / ESD", "");
+  link.set("Algo", undefined);
+  link.set("DE", undefined);
   link.set("OOP", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
   link.set("SNS", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
   link.set("LA", "https://i.ibb.co/SJ90KrZ/2451354.jpg");
