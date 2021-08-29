@@ -67,7 +67,7 @@ const RowComp = ({ row_type, class_name, time_of_class, join_link, button_status
               className={(button_status === 0) ? " cursor-pointer font-bold w-64  text-2xl  text-white sm:text-2xl inline-flex items-center justify-center px-5 py-3 border border-transparent text-base  rounded-md text-white bg-gray-400 hoverbg-gray-400" : "w-64  text-2xl  text-white sm:text-2xl inline-flex items-center justify-center px-5 py-3 border border-transparent text-base  rounded-md text-white font-bold bg-teal-accent-700 hover:bg-teal-500 text-white"}
               target="_blank"
             >
-              {join_link==="" ? "Check Group" : "Join Now"}
+              {class_name=="DE" || class_name=="Algo"  ? "Check Group" : "Join Now"}
             </a>
           </div>
           
